@@ -15,8 +15,25 @@ public class UnitTestingMath {
         System.out.println("Unit testing for mathproblems begin");
     }
 
+        Factorial fact1=new Factorial();
     // list out all the assertion for all of the math problem classes
     @Test
+    public  void recurios(){
+        int fact=fact1.recursionFactorial(5);
+        Assert.assertEquals(120,fact);
+
+    }
+    @Test
+    public void factoriel(){
+        int input=5;
+        int expected=120;
+        int fa=fact1.iterativeFactorial( input);
+
+        Assert.assertEquals(expected,fa);
+
+
+    }
+
 
     @AfterClass
     public static void afterTest(){

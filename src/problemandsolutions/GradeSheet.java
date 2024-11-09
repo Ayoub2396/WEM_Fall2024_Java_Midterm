@@ -21,6 +21,22 @@ public class GradeSheet {
     //
     //Your grade is B.
 
+    public static void grade(double quizz,double midTerm,double finalScore){
+        double avg=(quizz+midTerm+finalScore)/3;
 
+        if (avg>=90){
+            System.out.println("your grade is A");
+        } else if (avg>=70) {
+            System.out.println("your grade is B");
+        } else if (avg>=50) {
+            System.out.println("your grade is C");
+        }else {
+            System.out.println("your grade is F");
+        }
+    }
+
+    public static void main(String[] args) {
+        grade(80,68,90);
+    }
 
 }
